@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CVS Form for Person</title>
+        <link rel="stylesheet" href="PersStyle.css">
+    </head>
+    <body>
+        <h1>CVS Form for Person</h1>
+        <form method="post" action='peepee.txt'>
+        <fieldset>
+            <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text" required /></label>
+            <label for="last-name">Enter Your Last Name: <input id="birth-date" name="birth-date"/></label>
+            <label for="birth-date">Enter Your Birth Date: </label>
+        <div class="field-inline-block">
+            <label class="birth">DD</label>
+            <input type="text" pattern="[0-9]*" maxlength="2" size="2" class="date-field" required/>
+        </div>
+            /
+        <div class="field-inline-block">
+            <label class="birth">MM</label>
+            <input type="text" pattern="[0-9]*" maxlength="2" size="2" class="date-field" required/>
+         </div>
+            /
+        <div class="field-inline-block">
+            <label class="birth">YYYY</label>
+            <input type="text" pattern="[0-9]*" maxlength="4" size="4" class="date-field date-field--year" required/>
+         </div>
+            <label for="passport-number">Enter Your Passport Number: <input id="passport-number" name="passport-number" type="text" required /></label>
+            <label for="passport-series">Enter Your Passport Series: <input id="passport-series" name="passport-series" type="text" required /></label>
+        </fieldset>
+        <input type="submit" value="Submit" />
+    </form>
+    </body>
+</html>
